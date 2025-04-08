@@ -14,7 +14,7 @@ const generateItems = () => {
       reportName: `Report Campaign ${i}`,
       audience: `Audience ${i % 5 === 0 ? 'Adults 18+' : 'Teens 12+'}`,
       creationDate: new Date(Date.now() - i * 86400000).toISOString(), // decreasing dates
-      byAuth: `https://i.pravatar.cc/150?img=${i}`,
+      byAuth: `https://picsum.photos/id/${i}/200/200`,
       status: i % 3 === 0 ? 'COMPLETE' : 'PENDING',
       role: i % 2 === 0 ? 1 : 2
     });
