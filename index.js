@@ -25,7 +25,7 @@ const generateItems = () => {
       audience: i % 5 === 0 ? 'Adults 18+' : 'Teens 12+',
       creationDate: new Date(Date.now() - i * 86400000).toISOString(),
       createdBy: USER_NAMES[userIndex], // real user name
-      avatar: `https://picsum.photos/id/${i}/200/200`, // realistic random avatar
+      avatar: 'https://spacevoyageventures.com/wp-content/uploads/2024/02/Default_How_Avatar_Inspired_Technological_Innovation_in_Filmma_1.jpg', // realistic random avatar
       status: STATUS_TYPES[i % STATUS_TYPES.length], // realistic statuses cycling
       role: i % 2 === 0 ? 1 : 2
     });
